@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(5, 121, 48, 0.85);
+    color: white ;
+    padding: auto;  
+   
+}
+
+.cabecalho {
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: 4em; color: rgb(241, 239, 205);
+    
+}
+
+.logobr{
+    display: grid;
+    justify-items: end;
+
+}
+
+#busca {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 2vh 1vw;
+    margin-left: 2vw;
+}
+
+.lista {
+    list-style-type: none;
+    padding: 10px;
+}
+body {
+    background-image: url(./midias/imagensExtras/george-wolf-forca-br-poster-leve.jpg);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position: center center;
+}
+
+main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2vh;
+    margin-bottom: 2vh;
+    width: 40vw;
+}
+
+a {
+    text-decoration-style: solid;
+    color: rgb(157, 7, 7);
+    
+}
+
+a:hover {
+    color: rgb(5, 5, 243);
+}
+
+#section1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(11, 128, 146, 0.75);
+    width: 50vw;
+   
+}
+
+footer {
+    background-color: rgba(244, 248, 34, 0.85);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 920px)  {
+    #section1 {
+        width: 100vw;
+    }
+}
+@media screen and (min-device-width : 280px) and (max-device-width : 510px){
+    #section1 {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 45vh;
+    }
+
+}
+
